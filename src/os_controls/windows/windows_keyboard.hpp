@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "keyboard.hpp"
 
-namespace biv {
+namespace NovSev {
 	class WindowsKeyBoard : public KeyBoard {
 		public:
 			UserInput get_user_input() override;
@@ -10,3 +10,4 @@ namespace biv {
 			void off() override;
 	};
 }
+

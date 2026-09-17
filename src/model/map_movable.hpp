@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-namespace biv {
+namespace NovSev {
 	class MapMovable {
 		public: 
 			static const int MAP_STEP = 1;
@@ -10,3 +10,4 @@ namespace biv {
 			virtual void move_map_right() noexcept = 0;
 	};
 }
+

@@ -1,6 +1,6 @@
-#include "movable.hpp"
+﻿#include "movable.hpp"
 
-using biv::Movable;
+using NovSev::Movable;
 
 Movable::Movable(
 	const Coord& top_left, 
@@ -45,3 +45,4 @@ void Movable::move_vertically() noexcept {
 	}
 	top_left.y += vspeed;
 }
+

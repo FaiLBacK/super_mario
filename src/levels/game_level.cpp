@@ -1,6 +1,6 @@
-#include "game_level.hpp"
+﻿#include "game_level.hpp"
 
-using biv::GameLevel;
+using NovSev::GameLevel;
 
 GameLevel::GameLevel(UIFactory* ui_factory) : ui_factory(ui_factory) {}
 
@@ -19,3 +19,4 @@ bool GameLevel::is_final() const noexcept {
 void GameLevel::clear_data() {
 	ui_factory->clear_data();
 }
+

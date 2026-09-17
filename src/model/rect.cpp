@@ -1,8 +1,8 @@
-#include "rect.hpp"
+﻿#include "rect.hpp"
 
 #include <cmath>
 
-using biv::Rect;
+using NovSev::Rect;
 
 Rect::Rect(const Coord& top_left, const int width, const int height)
 	: top_left(top_left), width(width), height(height) {}
@@ -34,3 +34,4 @@ float Rect::get_x() const noexcept {
 float Rect::get_y() const noexcept {
 	return top_left.y;
 }
+

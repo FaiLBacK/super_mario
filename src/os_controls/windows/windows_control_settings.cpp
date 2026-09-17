@@ -1,8 +1,8 @@
-#include "windows_control_settings.hpp"
+﻿#include "windows_control_settings.hpp"
 
 #include <windows.h>
 
-using biv::WindowsControlSettings;
+using NovSev::WindowsControlSettings;
 
 void WindowsControlSettings::init() {
 	void* handle = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -18,3 +18,4 @@ void WindowsControlSettings::set_cursor_start_position() {
 	coord.Y = 0;
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+

@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include "console_ui_obj_rect_adapter.hpp"
 #include "full_box.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleFullBox : public FullBox, public ConsoleUIObjectRectAdapter {
 		public:
 			ConsoleFullBox(
@@ -15,3 +15,4 @@ namespace biv {
 			char get_brush() const noexcept override;
 	};
 }
+

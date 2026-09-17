@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Покажите на диаграмме иерархию наследования для класса ConsoleEnemy.
 */
 
@@ -7,7 +7,7 @@
 #include "console_ui_obj_rect_adapter.hpp"
 #include "enemy.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleEnemy : public Enemy, public ConsoleUIObjectRectAdapter {
 		public:
 			ConsoleEnemy(const Coord& top_left, const int width, const int height);
@@ -15,3 +15,4 @@ namespace biv {
 			char get_brush() const noexcept override;
 	};
 }
+

@@ -1,6 +1,6 @@
-#include "console_full_box.hpp"
+﻿#include "console_full_box.hpp"
 
-using biv::ConsoleFullBox;
+using NovSev::ConsoleFullBox;
 
 ConsoleFullBox::ConsoleFullBox(
 	const Coord& top_left, 
@@ -15,3 +15,4 @@ char ConsoleFullBox::get_brush() const noexcept {
 		return '-';
 	}
 }
+

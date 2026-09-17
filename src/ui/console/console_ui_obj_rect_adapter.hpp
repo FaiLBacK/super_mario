@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include "console_ui_obj.hpp"
 #include "rect.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleUIObjectRectAdapter : virtual public Rect, public ConsoleUIObject {
 		public:
 			ConsoleUIObjectRectAdapter() = default;
@@ -20,3 +20,4 @@ namespace biv {
 			virtual char get_brush() const noexcept = 0;
 	};
 }
+

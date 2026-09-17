@@ -1,6 +1,6 @@
-#include "console_ui_factory.hpp"
+﻿#include "console_ui_factory.hpp"
 
-using biv::ConsoleUIFactory;
+using NovSev::ConsoleUIFactory;
 
 ConsoleUIFactory::ConsoleUIFactory(Game* game) : UIFactory(game) {}
 
@@ -35,6 +35,17 @@ void ConsoleUIFactory::create_enemy(
 	game->add_movable(enemy);
 	game->add_collisionable(enemy);
 	game_map->add_obj(enemy);
+}
+
+void ConsoleUIFactory::create_flyable_enemy(
+	const Coord& top_left, const int width, const int height
+) {
+	ConsoleFlyableEnemy* flyable_enemy = new ConsoleFlyableEnemy(top_left, width, height);
+	flyable_enemies.push_back(flyable_enemy);
+	game->add_map_movable(flyable_enemy);
+	game->add_movable(flyable_enemy);
+	game->add_collisionable(flyable_enemy);
+	game_map->add_obj(flyable_enemy);
 }
 
 void ConsoleUIFactory::create_full_box(
@@ -86,13 +97,14 @@ void ConsoleUIFactory::create_ship(
 	game_map->add_obj(ship);
 }
 
-biv::GameMap* ConsoleUIFactory::get_game_map(const int height, const int width) {
+NovSev::GameMap* ConsoleUIFactory::get_game_map(const int height, const int width) {
 	if (game_map == nullptr) {
 		game_map = new ConsoleGameMap(height, width);
 	}
 	return game_map;
 }
 
-biv::Mario* ConsoleUIFactory::get_mario() {
+NovSev::Mario* ConsoleUIFactory::get_mario() {
 	return mario;
 }
+

@@ -1,8 +1,8 @@
-#include "enemy.hpp"
+﻿#include "enemy.hpp"
 
 #include "map_movable.hpp"
 
-using biv::Enemy;
+using NovSev::Enemy;
 
 Enemy::Enemy(const Coord& top_left, const int width, const int height) 
 	: RectMapMovableAdapter(top_left, width, height) {
@@ -10,11 +10,11 @@ Enemy::Enemy(const Coord& top_left, const int width, const int height)
 	hspeed = 0.2;
 }
 
-biv::Rect Enemy::get_rect() const noexcept {
+NovSev::Rect Enemy::get_rect() const noexcept {
 	return {top_left, width, height};
 }
 
-biv::Speed Enemy::get_speed() const noexcept {
+NovSev::Speed Enemy::get_speed() const noexcept {
 	return {vspeed, hspeed};
 }
 
@@ -48,3 +48,4 @@ void Enemy::process_vertical_static_collision(Rect* obj) noexcept {
 		vspeed = 0;
 	}
 }
+

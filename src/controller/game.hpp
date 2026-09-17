@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Как объекты раскладываются по контейнерам?
 */
 
@@ -12,7 +12,7 @@
 #include "movable.hpp"
 #include "rect.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Game {
 		private:
 			std::vector<MapMovable*> map_movable_objs;
@@ -63,3 +63,4 @@ namespace biv {
 			void remove_obj(std::vector<T*>& container, T* obj);
 	};
 }
+

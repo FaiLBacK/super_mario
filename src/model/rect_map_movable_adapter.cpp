@@ -1,6 +1,6 @@
-#include "rect_map_movable_adapter.hpp"
+﻿#include "rect_map_movable_adapter.hpp"
 
-using biv::RectMapMovableAdapter;
+using NovSev::RectMapMovableAdapter;
 
 RectMapMovableAdapter::RectMapMovableAdapter(
 	const Coord& top_left, const int width, const int height) {
@@ -16,3 +16,4 @@ void RectMapMovableAdapter::move_map_left() noexcept {
 void RectMapMovableAdapter::move_map_right() noexcept {
 	top_left.x += MapMovable::MAP_STEP;
 }
+

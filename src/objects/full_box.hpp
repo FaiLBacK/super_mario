@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 
 #include "box.hpp"
 #include "collisionable.hpp"
 #include "ui_factory.hpp"
 
-namespace biv {
+namespace NovSev {
 	class FullBox : public Box, public Collisionable {
 		protected:
 			UIFactory* ui_factory;
@@ -24,3 +24,4 @@ namespace biv {
 			void process_vertical_static_collision(Rect*) noexcept override;
 	};
 }
+

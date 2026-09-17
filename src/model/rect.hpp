@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "coord.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Rect {
 		protected:
 			Coord top_left;
@@ -22,3 +22,4 @@ namespace biv {
 			float get_y() const noexcept;
 	};
 }
+

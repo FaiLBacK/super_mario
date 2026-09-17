@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Какому паттерну проектирования соответствует UIFactory?
 	- В каких случаях используется этот паттернн проектирования?
 */
@@ -9,7 +9,7 @@
 #include "game_map.hpp"
 #include "mario.hpp"
 
-namespace biv {
+namespace NovSev {
 	class UIFactory {
 		protected:
 			Game* game = nullptr;
@@ -23,6 +23,8 @@ namespace biv {
 				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_enemy(
 				const Coord& top_left, const int width, const int height) = 0;
+			virtual void create_flyable_enemy(
+				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_full_box(
 				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_mario(
@@ -35,3 +37,4 @@ namespace biv {
 			virtual Mario* get_mario() = 0;
 	};
 }
+

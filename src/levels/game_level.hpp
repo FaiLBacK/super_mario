@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 /**
 	- На какую структуру данных похож класс GameLevel?
@@ -11,7 +11,7 @@
 
 #include "ui_factory.hpp"
 
-namespace biv {
+namespace NovSev {
 	class GameLevel {
 		protected:
 			UIFactory* ui_factory = nullptr;
@@ -34,3 +34,4 @@ namespace biv {
 			virtual void init_data() = 0;
 	};
 }
+

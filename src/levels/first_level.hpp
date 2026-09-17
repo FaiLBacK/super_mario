@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "game_level.hpp"
 
-namespace biv {
+namespace NovSev {
 	class FirstLevel : public GameLevel {
 		public:
 			FirstLevel(UIFactory* ui_factory);
@@ -13,3 +13,4 @@ namespace biv {
 			void init_data() override;
 	};
 }
+

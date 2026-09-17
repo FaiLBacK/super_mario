@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Почему класс Rect наследуется виртуальным образом?
 
 	- Что такое паттерн адаптер?
@@ -11,7 +11,7 @@
 #include "map_movable.hpp"
 #include "rect.hpp"
 
-namespace biv {
+namespace NovSev {
 	class RectMapMovableAdapter : virtual public Rect, public MapMovable {
 		public:
 			RectMapMovableAdapter(const Coord& top_left, const int width, const int height);
@@ -20,3 +20,4 @@ namespace biv {
 			void move_map_right() noexcept override;
 	};
 }
+

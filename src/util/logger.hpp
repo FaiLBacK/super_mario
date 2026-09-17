@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- В стиле какого паттерна проектирования написан этот класс?
 	- Почему здесь использован этот паттерн?
 	- Что такое LOG_INFO и для чего он сделан?
@@ -13,9 +13,9 @@
 
 #include "format.hpp"
 
-#define LOG_INFO(...) biv::Logger::getInstance().log_info(biv::format_string(__VA_ARGS__))
+#define LOG_INFO(...) NovSev::Logger::getInstance().log_info(NovSev::format_string(__VA_ARGS__))
 
-namespace biv {
+namespace NovSev {
 	class Logger {
 		private:
 			std::ofstream log_file;
@@ -36,3 +36,4 @@ namespace biv {
 		void log_info(const std::string& message);
 	};
 }
+

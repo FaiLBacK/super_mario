@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-namespace biv {
+namespace NovSev {
 	enum class UserInput {
 		EXIT,
 		MAP_LEFT,
@@ -16,3 +16,4 @@ namespace biv {
 			virtual void on() = 0;
 	};
 }
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Почему instance является статической локальной переменной?
 	- Как реализовать getInstance() без многопоточности?
 */
@@ -13,7 +13,7 @@
 #include <sstream>
 #include <string>
 
-using biv::Logger;
+using NovSev::Logger;
 
 Logger::Logger() {
 	log_file.open("super_mario_log.log", std::ios::out | std::ios::trunc);
@@ -57,3 +57,4 @@ void Logger::log_info(const std::string& message) {
 		std::cerr << "[ERROR] Log file is not open!" << std::endl;
 	}
 }
+

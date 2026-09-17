@@ -1,6 +1,6 @@
-#include "console_mario.hpp"
+﻿#include "console_mario.hpp"
 
-using biv::ConsoleMario;
+using NovSev::ConsoleMario;
 
 ConsoleMario::ConsoleMario(const Coord& top_left, const int width, const int height) 
 	: Mario(top_left, width, height) {}
@@ -8,3 +8,4 @@ ConsoleMario::ConsoleMario(const Coord& top_left, const int width, const int hei
 char ConsoleMario::get_brush() const noexcept {
 	return '@';
 }
+

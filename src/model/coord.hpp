@@ -1,8 +1,9 @@
-#pragma once
+﻿#pragma once
 
-namespace biv {
+namespace NovSev {
 	struct Coord {
 		float x;
 		float y;
 	};
 }
+

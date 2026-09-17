@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-namespace biv {
+namespace NovSev {
 	class GameMap {
 		protected:
 			const int height;
@@ -19,3 +19,4 @@ namespace biv {
 			virtual void show() const noexcept = 0;
 	};
 }
+

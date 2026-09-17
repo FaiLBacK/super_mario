@@ -1,6 +1,6 @@
-#include "collisionable.hpp"
+﻿#include "collisionable.hpp"
 
-using biv::Collisionable;
+using NovSev::Collisionable;
 
 bool Collisionable::has_collision(Rect* obj) const noexcept {
 	Rect myself = get_rect();
@@ -19,3 +19,4 @@ bool Collisionable::is_active() const noexcept {
 void Collisionable::kill() noexcept {
 	is_active_ = false;
 }
+

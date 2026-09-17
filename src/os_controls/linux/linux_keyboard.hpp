@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "keyboard.hpp"
 
-namespace biv {
+namespace NovSev {
 	class LinuxKeyboard : public KeyBoard {
 		private:
 			UserInput prev_input;
@@ -13,3 +13,4 @@ namespace biv {
 			void off() override;
 	};
 }
+

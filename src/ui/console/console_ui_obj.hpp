@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "rect.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleUIObject {
 		public:
 			virtual int get_bottom() const noexcept = 0;
@@ -13,3 +13,4 @@ namespace biv {
 			virtual int get_top() const noexcept = 0;
 	};
 }
+

@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/os_controls/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/os_controls/os_api/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/controller/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/levels/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/model/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/objects/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/ui/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/ui/console/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/ui/console/ui_objects/cmake_install.cmake",
+		"C:/IT/Code/kmms_prog_hw_novgorodcev/super_mario/build/util/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

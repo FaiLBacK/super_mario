@@ -1,8 +1,8 @@
-#include "game.hpp"
+﻿#include "game.hpp"
 
 #include <algorithm>
 
-using biv::Game;
+using NovSev::Game;
 
 Game::Game() {}
 
@@ -158,3 +158,4 @@ void Game::remove_obj(std::vector<T*>& container, T* obj) {
 		container.end()
 	);
 }
+

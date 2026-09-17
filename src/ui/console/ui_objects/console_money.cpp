@@ -1,6 +1,6 @@
-#include "console_money.hpp"
+﻿#include "console_money.hpp"
 
-using biv::ConsoleMoney;
+using NovSev::ConsoleMoney;
 
 ConsoleMoney::ConsoleMoney(const Coord& top_left, const int width, const int height) 
 	: Money(top_left, width, height) {}
@@ -8,3 +8,4 @@ ConsoleMoney::ConsoleMoney(const Coord& top_left, const int width, const int hei
 char ConsoleMoney::get_brush() const noexcept {
 	return '$';
 }
+

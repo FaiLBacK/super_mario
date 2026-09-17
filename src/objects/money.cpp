@@ -1,8 +1,8 @@
-#include "money.hpp"
+﻿#include "money.hpp"
 
 #include "map_movable.hpp"
 
-using biv::Money;
+using NovSev::Money;
 
 Money::Money(const Coord& top_left, const int width, const int height) 
 	: RectMapMovableAdapter(top_left, width, height) {
@@ -10,11 +10,11 @@ Money::Money(const Coord& top_left, const int width, const int height)
 	hspeed = 0.2;
 }
 
-biv::Rect Money::get_rect() const noexcept {
+NovSev::Rect Money::get_rect() const noexcept {
 	return {top_left, width, height};
 }
 
-biv::Speed Money::get_speed() const noexcept {
+NovSev::Speed Money::get_speed() const noexcept {
 	return {vspeed, hspeed};
 }
 
@@ -36,3 +36,4 @@ void Money::process_vertical_static_collision(Rect* obj) noexcept {
 		vspeed = 0;
 	}
 }
+

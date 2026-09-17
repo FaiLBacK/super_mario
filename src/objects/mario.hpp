@@ -1,11 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #include "collisionable.hpp"
 #include "movable.hpp"
 #include "rect.hpp"
 #include "speed.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Mario : public Movable, public Collisionable {
 		public:
 			Mario(const Coord& top_left, const int width, const int height);
@@ -21,3 +21,4 @@ namespace biv {
 			void process_vertical_static_collision(Rect*) noexcept override;
 	};
 }
+

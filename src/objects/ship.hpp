@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "rect_map_movable_adapter.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Ship : public RectMapMovableAdapter {
 		public:
 			Ship(
@@ -10,3 +10,4 @@ namespace biv {
 			) : RectMapMovableAdapter(top_left, width, height) {}
 	};
 }
+

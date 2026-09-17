@@ -1,0 +1,27 @@
+# ninja log v7
+63	436	8107533811327009	CMakeFiles/super_mario.dir/model/collisionable.cpp.obj	b72bd65db342f702
+79	502	8107533811476988	CMakeFiles/super_mario.dir/model/game_map.cpp.obj	6e756aeec946166a
+94	620	8107533811626991	CMakeFiles/super_mario.dir/model/movable.cpp.obj	f0561a5cd8b069fe
+133	700	8107533812016995	CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.obj	ec15525361c631cd
+177	807	8107533812457003	CMakeFiles/super_mario.dir/objects/enemy.cpp.obj	1532ce5f37b16fcf
+23	1027	8107533810918239	CMakeFiles/super_mario.dir/levels/first_level.cpp.obj	85984f5eba43c643
+36	1189	8107533811047012	CMakeFiles/super_mario.dir/levels/game_level.cpp.obj	b6615d587b8ad744
+48	1226	8107533811167010	CMakeFiles/super_mario.dir/levels/second_level.cpp.obj	788edbd244ed3834
+205	1268	8107533812737017	CMakeFiles/super_mario.dir/objects/mario.cpp.obj	80b21eb1530a8a4
+256	1302	8107533813247001	CMakeFiles/super_mario.dir/objects/money.cpp.obj	ffa8e59bf7110a8e
+113	1331	8107533811817032	CMakeFiles/super_mario.dir/model/rect.cpp.obj	5afdeeadfc30f698
+154	1355	8107533812227004	CMakeFiles/super_mario.dir/objects/full_box.cpp.obj	b102f10cd8aa42e0
+5	1357	8107533810737383	CMakeFiles/super_mario.dir/main.cpp.obj	d57c811c335e370a
+621	1369	8107533816897003	CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.obj	51edb41130b82592
+700	1453	8107533817687013	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.obj	d7b9d05708fc0a1b
+808	1476	8107533818767008	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.obj	45a6f8e729235edb
+438	1513	8107533815077016	CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.obj	4ab816d3ddbe57be
+13	1519	8107533810816992	CMakeFiles/super_mario.dir/controller/game.cpp.obj	9fea288d04738d2f
+1189	1526	8107533822587012	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.obj	eb55962d620ba082
+1226	1556	8107533822956995	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.obj	260a4c2ad0c5205c
+504	1579	8107533815757046	CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.obj	6bdf93a820a68783
+1268	1585	8107533823366994	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.obj	9ab00dd60e550b51
+1028	1644	8107533820977021	CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.obj	733f5b4cd54631a2
+1302	1925	8107533823707003	CMakeFiles/super_mario.dir/util/format_templates.cpp.obj	88d63f7f4accdb24
+1331	2017	8107533824007001	CMakeFiles/super_mario.dir/util/logger.cpp.obj	5f6fa38a28f3b533
+2017	2373	8107533830855946	super_mario.exe	72fe3ac4465fa1a3

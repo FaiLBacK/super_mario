@@ -1,10 +1,10 @@
-#include "linux_keyboard.hpp"
+﻿#include "linux_keyboard.hpp"
 
 #include <ncurses.h>
 
-using biv::LinuxKeyboard;
+using NovSev::LinuxKeyboard;
 	
-biv::UserInput LinuxKeyboard::get_user_input() {
+NovSev::UserInput LinuxKeyboard::get_user_input() {
 	int c = getch();
 	
 	switch (c) {
@@ -38,3 +38,4 @@ void LinuxKeyboard::on() {}
 void LinuxKeyboard::off() {
 	prev_input = UserInput::NO_INPUT;
 }
+

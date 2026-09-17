@@ -1,4 +1,4 @@
-#include "console_game_map.hpp"
+﻿#include "console_game_map.hpp"
 
 #include <algorithm>
 #include <cstdio>
@@ -8,7 +8,7 @@
 	#include <ncurses.h>
 #endif
 
-using biv::ConsoleGameMap;
+using NovSev::ConsoleGameMap;
 
 ConsoleGameMap::ConsoleGameMap(const int height, const int width) 
 	: GameMap(height, width) {
@@ -86,7 +86,7 @@ void ConsoleGameMap::remove_objs() {
 void ConsoleGameMap::show() const noexcept {
 	#ifdef WINDOWS_CONSOLE
 		for (int i = 0; i < height; i++) {
-			std::cout << map[i];
+			std::cout << map[i] << '\n';
 		}
 	#elif defined(LINUX_CONSOLE)
 		for (int i = 0; i < height; i++) {
@@ -97,3 +97,4 @@ void ConsoleGameMap::show() const noexcept {
 		::refresh();
 	#endif
 }
+

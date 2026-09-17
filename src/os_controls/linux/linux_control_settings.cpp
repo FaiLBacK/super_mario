@@ -1,8 +1,8 @@
-#include "linux_control_settings.hpp"
+﻿#include "linux_control_settings.hpp"
 
 #include <ncurses.h>
 
-using biv::LinuxControlSettings;
+using NovSev::LinuxControlSettings;
 
 LinuxControlSettings::LinuxControlSettings(const int height, const int width)
 : height(height), width(width) {}
@@ -28,3 +28,4 @@ void LinuxControlSettings::init() {
 void LinuxControlSettings::set_cursor_start_position() {
 	move(0, 0);
 }
+

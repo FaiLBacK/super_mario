@@ -1,17 +1,17 @@
-#include "first_level.hpp"
+﻿#include "first_level.hpp"
 
-#include "second_level.hpp"
+#include "new_second_level.hpp"
 
-using biv::FirstLevel;
+using NovSev::FirstLevel;
 
 FirstLevel::FirstLevel(UIFactory* ui_factory) : GameLevel(ui_factory) {
 	init_data();
 }
 
-biv::GameLevel* FirstLevel::get_next() {
+NovSev::GameLevel* FirstLevel::get_next() {
 	if (!next) {
 		clear_data();
-		next = new biv::SecondLevel(ui_factory);
+		next = new NovSev::NewSecondLevel(ui_factory);
 	}
 	return next;
 }
@@ -47,3 +47,4 @@ void FirstLevel::init_data() {
 	ui_factory->create_enemy({125, 5}, 3, 2);
 	ui_factory->create_enemy({160, 5}, 3, 2);
 }
+

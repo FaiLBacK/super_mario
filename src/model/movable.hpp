@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "rect.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Movable : virtual public Rect {
 		protected:
 			static constexpr float JUMP_SPEED = -1.0f;
@@ -30,3 +30,4 @@ namespace biv {
 			virtual void move_vertically() noexcept;
 	};
 }
+

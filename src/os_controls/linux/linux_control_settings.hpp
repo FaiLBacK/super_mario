@@ -1,8 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "os_control_settings.hpp"
 
-namespace biv {
+namespace NovSev {
 	class LinuxControlSettings : public OSControlSettings {
 		private:
 			int height;
@@ -15,3 +15,4 @@ namespace biv {
 			void set_cursor_start_position() override;
 	};
 }
+

@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 
 #include "console_box.hpp"
 #include "console_enemy.hpp"
+#include "console_flyable_enemy.hpp"
 #include "console_full_box.hpp"
 #include "console_game_map.hpp"
 #include "console_mario.hpp"
@@ -9,7 +10,7 @@
 #include "console_ship.hpp"
 #include "ui_factory.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleUIFactory : public UIFactory {
 		private:
 			ConsoleGameMap* game_map = nullptr;
@@ -18,6 +19,7 @@ namespace biv {
 			std::vector<ConsoleShip*> ships;
 			ConsoleMario* mario = nullptr;
 			std::vector<ConsoleEnemy*> enemies;
+			std::vector<ConsoleFlyableEnemy*> flyable_enemies;
 			std::vector<ConsoleMoney*> moneys;
 
 		public:
@@ -28,6 +30,9 @@ namespace biv {
 				const Coord& top_left, const int width, const int height
 			) override;
 			void create_enemy(
+				const Coord& top_left, const int width, const int height
+			) override;
+			void create_flyable_enemy(
 				const Coord& top_left, const int width, const int height
 			) override;
 			void create_full_box(
@@ -46,3 +51,4 @@ namespace biv {
 			Mario* get_mario() override;
 	};
 }
+

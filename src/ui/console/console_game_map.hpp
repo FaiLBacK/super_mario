@@ -1,11 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #include <vector>
 
 #include "game_map.hpp"
 #include "console_ui_obj.hpp"
 
-namespace biv {
+namespace NovSev {
 	class ConsoleGameMap : public GameMap {
 		private:
 			char** map;
@@ -24,3 +24,4 @@ namespace biv {
 			void show() const noexcept override;
 	};
 }
+

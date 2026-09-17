@@ -1,4 +1,4 @@
-/**
+﻿/**
 	- Если создавать класс FlyableEenemy, JumpableEnemy и другие виды врагов, 
 		то почему их нельзя наследовать от Enemy?
 */
@@ -11,7 +11,7 @@
 #include "rect_map_movable_adapter.hpp"
 #include "speed.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Enemy : public RectMapMovableAdapter, public Movable, public Collisionable {
 		public:
 			Enemy(const Coord& top_left, const int width, const int height);
@@ -24,3 +24,4 @@ namespace biv {
 			void process_vertical_static_collision(Rect*) noexcept override;
 	};
 }
+

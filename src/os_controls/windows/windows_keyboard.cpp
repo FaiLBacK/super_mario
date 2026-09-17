@@ -1,9 +1,9 @@
-#include "windows_keyboard.hpp"
+﻿#include "windows_keyboard.hpp"
 
 #include <windows.h>
 
-using biv::UserInput;
-using biv::WindowsKeyBoard;
+using NovSev::UserInput;
+using NovSev::WindowsKeyBoard;
 
 UserInput WindowsKeyBoard::get_user_input() {
 	if (GetKeyState('A') < 0) {
@@ -21,3 +21,4 @@ UserInput WindowsKeyBoard::get_user_input() {
 
 void WindowsKeyBoard::on() {}
 void WindowsKeyBoard::off() {}
+

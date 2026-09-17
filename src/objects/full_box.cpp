@@ -1,6 +1,6 @@
-#include "full_box.hpp"
+﻿#include "full_box.hpp"
 
-using biv::FullBox;
+using NovSev::FullBox;
 
 FullBox::FullBox(
 	const Coord& top_left, 
@@ -8,11 +8,11 @@ FullBox::FullBox(
 	UIFactory* ui_factory
 ) : Box(top_left, width, height), ui_factory(ui_factory) {}
 
-biv::Rect FullBox::get_rect() const noexcept {
+NovSev::Rect FullBox::get_rect() const noexcept {
 	return {top_left, width, height};
 }
 
-biv::Speed FullBox::get_speed() const noexcept {
+NovSev::Speed FullBox::get_speed() const noexcept {
 	return {0, 0};
 }
 
@@ -26,3 +26,4 @@ void FullBox::process_mario_collision(Collisionable* mario) noexcept {
 }
 
 void FullBox::process_vertical_static_collision(Rect* obj) noexcept {}
+

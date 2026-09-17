@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include "rect.hpp"
 #include "speed.hpp"
 
-namespace biv {
+namespace NovSev {
 	class Collisionable {
 		protected:
 			bool is_active_ = true;
@@ -21,3 +21,4 @@ namespace biv {
 			virtual void process_vertical_static_collision(Rect*) noexcept = 0;
 	};
 }
+
