@@ -24,7 +24,10 @@ void FlyableEnemy::process_horizontal_static_collision(Rect* obj) noexcept {
 }
 
 void FlyableEnemy::process_mario_collision(Collisionable* mario) noexcept {
-	if (mario->get_speed().v > 0 && mario->get_speed().v != V_ACCELERATION) {
+	const Rect mario_rect = mario->get_rect();
+	const float previous_mario_bottom = mario_rect.get_bottom() - mario->get_speed().v;
+
+	if (mario->get_speed().v > 0 && previous_mario_bottom <= get_rect().get_top()) {
 		kill();
 	} else {
 		mario->kill();

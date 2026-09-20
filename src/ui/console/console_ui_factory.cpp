@@ -13,6 +13,7 @@ void ConsoleUIFactory::clear_data() {
 	full_boxes.clear();
 	ships.clear();
 	enemies.clear();
+	flyable_enemies.clear();
 	moneys.clear();
 }
 
