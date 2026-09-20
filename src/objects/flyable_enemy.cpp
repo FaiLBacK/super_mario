@@ -25,9 +25,11 @@ void FlyableEnemy::process_horizontal_static_collision(Rect* obj) noexcept {
 
 void FlyableEnemy::process_mario_collision(Collisionable* mario) noexcept {
 	const Rect mario_rect = mario->get_rect();
-	const float previous_mario_bottom = mario_rect.get_bottom() - mario->get_speed().v;
+	const float previous_mario_bottom =
+		mario_rect.get_y() + mario_rect.get_height() - mario->get_speed().v;
+	const float enemy_top = get_rect().get_y();
 
-	if (mario->get_speed().v > 0 && previous_mario_bottom <= get_rect().get_top()) {
+	if (mario->get_speed().v > 0 && previous_mario_bottom <= enemy_top) {
 		kill();
 	} else {
 		mario->kill();
@@ -43,5 +45,9 @@ void FlyableEnemy::move_horizontally() noexcept {
 }
 
 void FlyableEnemy::move_vertically() noexcept {
-    top_left.y += vspeed;
+	if (is_active()) {
+		top_left.y += vspeed;
+	} else {
+		Movable::move_vertically();
+	}
 }
