@@ -26,4 +26,5 @@ void NewSecondLevel::init_data() {
       ui_factory->create_ship({105, 20}, 15, 2);
 
     ui_factory->create_flyable_enemy({45, 15}, 2, 2);
+	ui_factory->create_jumpable_enemy({80, 15}, 2, 2);
 }

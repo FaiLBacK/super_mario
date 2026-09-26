@@ -23,6 +23,8 @@ namespace NovSev {
 				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_enemy(
 				const Coord& top_left, const int width, const int height) = 0;
+			virtual void create_jumpable_enemy(
+				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_flyable_enemy(
 				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_full_box(

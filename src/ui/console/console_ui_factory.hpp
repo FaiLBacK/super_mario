@@ -3,6 +3,7 @@
 #include "console_box.hpp"
 #include "console_enemy.hpp"
 #include "console_flyable_enemy.hpp"
+#include "console_jumpable_enemy.hpp"
 #include "console_full_box.hpp"
 #include "console_game_map.hpp"
 #include "console_mario.hpp"
@@ -20,6 +21,7 @@ namespace NovSev {
 			ConsoleMario* mario = nullptr;
 			std::vector<ConsoleEnemy*> enemies;
 			std::vector<ConsoleFlyableEnemy*> flyable_enemies;
+			std::vector<ConsoleJumpableEnemy*> jumpable_enemies;
 			std::vector<ConsoleMoney*> moneys;
 
 		public:
@@ -35,11 +37,15 @@ namespace NovSev {
 			void create_flyable_enemy(
 				const Coord& top_left, const int width, const int height
 			) override;
+			void create_jumpable_enemy(
+				const Coord& top_left, const int width, const int height
+			) override;
 			void create_full_box(
 				const Coord& top_left, const int width, const int height
 			) override;
 			void create_mario(
 				const Coord& top_left, const int width, const int height
+			
 			) override;
 			void create_money(
 				const Coord& top_left, const int width, const int height
