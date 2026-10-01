@@ -24,11 +24,17 @@ void JumpableEnemy::process_horizontal_static_collision(Rect* obj) noexcept {
 
 void JumpableEnemy::process_mario_collision(Collisionable* mario) noexcept {
 	const Rect mario_rect = mario->get_rect();
+	const float mario_bottom = mario_rect.get_y() + mario_rect.get_height();
 	const float previous_mario_bottom =
-		mario_rect.get_y() + mario_rect.get_height() - mario->get_speed().v;
+		mario_bottom - mario->get_speed().v;
 	const float enemy_top = get_rect().get_y();
+	const float previous_enemy_top = enemy_top - get_speed().v;
 
-	if (mario->get_speed().v > 0 && previous_mario_bottom <= enemy_top) {
+	const bool mario_landed_on_top =
+		mario->get_speed().v > 0 &&
+		previous_mario_bottom <= previous_enemy_top;
+
+	if (mario_landed_on_top) {
 		kill();
 	} else {
 		mario->kill();
