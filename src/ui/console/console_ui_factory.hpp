@@ -8,6 +8,7 @@
 #include "console_game_map.hpp"
 #include "console_mario.hpp"
 #include "console_money.hpp"
+#include "console_moving_platform.hpp"
 #include "console_ship.hpp"
 #include "ui_factory.hpp"
 
@@ -22,6 +23,7 @@ namespace NovSev {
 			std::vector<ConsoleEnemy*> enemies;
 			std::vector<ConsoleFlyableEnemy*> flyable_enemies;
 			std::vector<ConsoleJumpableEnemy*> jumpable_enemies;
+			std::vector<ConsoleMovingPlatform*> moving_platforms;
 			std::vector<ConsoleMoney*> moneys;
 
 		public:
@@ -48,6 +50,9 @@ namespace NovSev {
 			
 			) override;
 			void create_money(
+				const Coord& top_left, const int width, const int height
+			) override;
+			void create_moving_platform(
 				const Coord& top_left, const int width, const int height
 			) override;
 			void create_ship(
